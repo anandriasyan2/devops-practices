@@ -1,0 +1,225 @@
+  774  sudo wget   https://github.com/prometheus/node_exporter/releases/download/v1.0.1/node_exporter-1.0.1.linux-amd64.tar.gz
+  775  ls -l
+  776  sudo groupadd -f node_exporter
+  777  cat /etc/group
+  778  clear
+  779  sudo useradd -g node_exporter --no-create-home --shell /bin/false node_exporter
+  780  sudo mkdir /etc/node_exporter
+  781  cd /etc/node_exporter
+  782  ls -l
+  783  cat /etc/passwd | grep node_exporter
+  784  cd /etc/
+  785  ls -l
+  786  sudo chown node_exporter:node_exporter /etc/node_exporter
+  787  ls -l
+  788  ls -l | grep node_exporter
+  789  ls -l
+  790  cd tmp/
+  791  cd /tmp/
+  792  ls -l
+  793  tar -xvf node_exporter-1.0.1.linux-amd64.tar.gz
+  794  sudo wget   https://github.com/prometheus/node_exporter/releases/download/v1.0.1/node_exporter-1.0.1.linux-amd64.tar.gz
+  795  ls -l
+  796  tar -xvf node_exporter-1.0.1.linux-amd64.tar.gz
+  797  ls -l
+  798  mv node_exporter-1.0.1.linux-amd64 node_exporter-files
+  799  ls -l
+  800  mv node_exporter-files /etc/node_exporter
+  801  sudo mv node_exporter-files /etc/node_exporter
+  802  ls -l
+  803  cd /etc/node_exporter/
+  804  ls -l
+  805  sudo cp node_exporter-files/node_exporter /usr/bin/
+  806  sudo chown node_exporter:node_exporter /usr/bin/node_exporter
+  807  sudo vi /usr/lib/systemd/system/node_exporter.service
+  808  sudo nano /usr/lib/systemd/system/node_exporter.service
+  809  sudo vi /usr/lib/systemd/system/node_exporter.service
+  810  sudo cat /usr/lib/systemd/system/node_exporter.service
+  811  clear
+  812  sudo chmod 664 /usr/lib/systemd/system/node_exporter.service
+  813  sudo ls -l /usr/lib/systemd/system/node_exporter.service
+  814  sudo systemctl daemon-reload
+  815  sudo systemctl start node_exporter
+  816  sudo systemctl enable node_exporter.service
+  817  sudo firewall-cmd --permanent --zone=public --add-port=9200/tcp
+  818  sudo vi /usr/lib/systemd/system/node_exporter.service
+  819  sudo cat /usr/lib/systemd/system/node_exporter.service
+  820  sudo systemctl restart node_exporter
+  821  sudo systemctl daemon-reload
+  822  sudo systemctl start node_exporter
+  823  sudo systemctl status node_exporter
+  824  sudo systemctl enable node_exporter.service
+  825  ifconfig
+  826  rm -rf node_exporter-1.0.1.linux-amd64.tar.gz node_exporter-files
+  827  sudo rm -rf node_exporter-1.0.1.linux-amd64.tar.gz node_exporter-files
+  828  sudo wget https://github.com/prometheus/prometheus/releases/download/v2.37.6/prometheus-2.37.6.linux-amd64.tar.gz
+  829  ls -l
+  830  sudo mv prometheus-2.37.6.linux-amd64.tar.gz /tmp
+  831  cd /tmp
+  832  ls -l
+  833  sudo tar xvfz prometheus-*.tar.gz
+  834  sudo rm prometheus-*.tar.gz
+  835  sudo mkdir /etc/prometheus /var/lib/prometheus
+  836  cd prometheus-2.37.6.linux-amd64
+  837  sudo mv prometheus promtool /usr/local/bin/
+  838  sudo mv prometheus.yml /etc/prometheus/prometheus.yml
+  839  sudo mv consoles/ console_libraries/ /etc/prometheus/
+  840  prometheus --version
+  841  sudo useradd -rs /bin/false prometheus
+  842  sudo chown -R prometheus: /etc/prometheus /var/lib/prometheus
+  843  sudo vi /etc/systemd/system/prometheus.service
+  844  sudo systemctl daemon-reload
+  845  sudo systemctl enable prometheus
+  846  sudo systemctl start prometheus
+  847  sudo systemctl status prometheus
+  848  sudo vi /etc/systemd/system/node_exporter.service
+  849  sudo systemctl enable node_exporter
+  850  sudo systemctl daemon-reload
+  851  sudo systemctl start node_exporter
+  852  sudo systemctl status node_exporter
+  853  sudo vi /etc/prometheus/prometheus.yml
+  854  sudo nano /etc/prometheus/prometheus.yml
+  855  sudo cat /etc/prometheus/prometheus.yml
+  856  sudo systemctl restart prometheus
+  857  sudo nano /etc/prometheus/prometheus.yml
+  858  sudo systemctl restart prometheus
+  859  sudo systemctl status prometheus
+  860  sudo systemctl start prometheus
+  861  sudo systemctl status prometheus
+  862  reboot
+  863  sudo systemctl status prometheus
+  864  sudo systemctl status node_exporter.service 
+  865  apt purge node_exporter*
+  866  sudo apt purge node_exporter*
+  867  sudo apt purge node_exporter.service
+  868  sudo apt purge prometheus*
+  869  sudo apt autoremove
+  870  sudo apt autoclean
+  871  reboot
+  872  sudo systemctl stop prometheus
+  873  sudo userdel -r prometheus
+  874  sudo groupdel prometheus
+  875  sudo apt-get purge prometheus
+  876  sudo rm -rf /etc/prometheus/
+  877  sudo rm -rf /var/lib/prometheus/
+  878  sudo rm /etc/systemd/system/prometheus.service
+  879  sudo systemctl daemon-reload
+  880  sudo systemctl status prometheus
+  881  sudo apt-get remove prometheus-node-exporter 
+  882  sudo apt-get remove --auto-remove prometheus-node-exporter 
+  883  sudo apt-get purge prometheus-node-exporter 
+  884  sudo apt-get purge --auto-remove prometheus-node-exporter 
+  885  systemctl status node_exporter.service 
+  886  sudo groupdel node_exporter 
+  887  sudo systemctl stop node_exporter.service 
+  888  systemctl status node_exporter.service 
+  889  sudo groupdel node_exporter 
+  890  sudo apt autoclean && sudo apt autoremove
+  891  sudo userdel -r node_exporter 
+  892  sudo groupdel node_exporter 
+  893  sudo apt-get purge node_exporter
+  894  sudo apt-get purge node_exporter*
+  895  sudo apt-get purge node_exporter.service
+  896  sudo rm -rf /etc/node_exporter
+  897  sudo cd /usr/lib/systemd/system/
+  898  sudo cd /usr/lib/systemd/system
+  899  sudo cd /usr/lib/systemd
+  900  cd /usr/lib/systemd/system
+  901  ls -l
+  902  rm -rf node_exporter.service*
+  903  sudo rm -rf node_exporter.service*
+  904  sudo systemctl daemon-reload
+  905  sudo systemctl status node_exporter
+  906  reboot
+  907  sudo systemctl status node_exporter.service 
+  908  sudo systemctl status prometheus
+  909  sudo apt purge prometheus
+  910  su root
+  911  cd /etc/node_exporter
+  912  ls -l /etc/
+  913  cd
+  914  /tmp
+  915  cd tmp/
+  916  wget https://github.com/prometheus/prometheus/releases/download/v2.37.6/prometheus-2.37.6.linux-amd64.tar.gz
+  917  ls -l
+  918  tar xvfz prometheus-*.tar.gz
+  919  rm prometheus-*.tar.gz
+  920  sudo mkdir /etc/prometheus /var/lib/prometheus
+  921  cd prometheus-2.37.6.linux-amd64
+  922  sudo mv prometheus promtool /usr/local/bin/
+  923  sudo mv prometheus.yml /etc/prometheus/prometheus.yml
+  924  sudo mv consoles/ console_libraries/ /etc/prometheus/
+  925  prometheus --version
+  926  sudo useradd -rs /bin/false prometheus
+  927  sudo chown -R prometheus: /etc/prometheus /var/lib/prometheus
+  928  sudo vi /etc/systemd/system/prometheus.service
+  929  sudo systemctl daemon-reload
+  930  sudo systemctl enable prometheus
+  931  sudo systemctl start prometheus
+  932  sudo systemctl status prometheus
+  933  wget https://github.com/prometheus/node_exporter/releases/download/v1.5.0/node_exporter-1.5.0.linux-amd64.tar.gz
+  934  ls -l
+  935  sudo mv node_exporter-1.5.0.linux-amd64.tar.gz tmp/
+  936  ls -l
+  937  sudo mv node_exporter-1.5.0.linux-amd64.tar.gz /tmp
+  938  ls -l
+  939  cd /tmp
+  940  ls -l
+  941  sudo mkdir node_exporter
+  942  ls -l
+  943  sudo mv node_exporter-1.5.0.linux-amd64.tar.gz node_exporter
+  944  ls -l
+  945  cd node_exporter/
+  946  ls -l
+  947  tar xvfz node_exporter-*.tar.gz
+  948  sudo tar xvfz node_exporter-*.tar.gz
+  949  sudo mv node_exporter-1.5.0.linux-amd64/node_exporter /usr/local/bin
+  950  rm -r node_exporter-1.5.0.linux-amd64*
+  951  sudo rm -r node_exporter-1.5.0.linux-amd64*
+  952  node_exporter
+  953  sudo useradd -rs /bin/false node_exporter
+  954  sudo vi /etc/systemd/system/node_exporter.service
+  955  sudo nano /etc/systemd/system/node_exporter.service
+  956  sudo systemctl enable node_exporter
+  957  sudo systemctl daemon-reload
+  958  sudo systemctl start node_exporter
+  959  sudo systemctl status node_exporter
+  960  sudo nano /etc/prometheus/prometheus.yml
+  961  sudo systemctl restart prometheus
+  962  sudo nano /etc/prometheus/prometheus.yml
+  963  sudo systemctl restart prometheus
+  964  sudo nano /etc/prometheus/prometheus.yml
+  965  sudo systemctl restart prometheus
+  966  reboot
+  967  sudo nano /etc/prometheus/prometheus.yml
+  968  sudo systemctl restart prometheus
+  969  sudo nano /etc/prometheus/prometheus.yml
+  970  sudo systemctl restart prometheus
+  971  sudo nano /etc/prometheus/prometheus.yml
+  972  sudo systemctl restart prometheus
+  973  sudo nano /etc/prometheus/prometheus.yml
+  974  sudo systemctl restart prometheus
+  975  sudo nano /etc/prometheus/prometheus.yml
+  976  sudo systemctl restart prometheus
+  977  sudo nano /etc/prometheus/prometheus.yml
+  978  sudo systemctl restart prometheus
+  979  sudo nano /etc/prometheus/prometheus.yml
+  980  sudo systemctl restart prometheus
+  981  sudo nano /etc/prometheus/prometheus.yml
+  982  sudo systemctl restart prometheus
+  983  sudo apt-get install -y apt-transport-https software-properties-common
+  984  sudo wget -q -O /usr/share/keyrings/grafana.key https://apt.grafana.com/gpg.key
+  985  echo "deb [signed-by=/usr/share/keyrings/grafana.key] https://apt.grafana.com stable main" | sudo tee -a /etc/apt/sources.list.d/grafana.list
+  986  sudo apt-get update
+  987  sudo apt-get install grafana
+  988  sudo systemctl daemon-reload
+  989  sudo systemctl enable grafana-server.service
+  990  sudo systemctl start grafana-server
+  991  sudo systemctl status grafana-server
+  992  clear
+  993  systemctl status grafana-server.service 
+  994  systemctl status node_exporter.service 
+  995  htop
+  996  ls -l
+  997  clear
+  998  history > homework-5.txt

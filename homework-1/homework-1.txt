@@ -1,0 +1,11 @@
+﻿serg@Ubuntu-22:~$ history
+    1  who
+    2  pwd
+    3  last
+    4  ls
+    5  touch Hello
+    6  ls
+    7  ls -l
+    8  ls -l -a
+    9  history
+serg@Ubuntu-22:~$

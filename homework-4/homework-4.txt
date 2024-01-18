@@ -1,0 +1,386 @@
+﻿sergey@sergey-VirtualBox:~$ history
+    1  useradd jane
+    2  cd /etc/
+    3  cd /etc/default/
+    4  ls
+    5  cd /useradd
+    6  cd /etc/default/useradd/
+    7  cd /default/useradd/
+    8  cat useradd
+    9  nano /default/useradd/
+   10  nano /default/useradd
+   11  cat  /default/useradd
+   12  nano useradd
+   13  sudo nano useradd
+   14  man useradd
+   15  sudo useradd jane
+   16  sudo deluser jane
+   17  sudo useradd -d ani
+   18  sudo useradd -m ani
+   19  ls -ld
+   20  ls -ld /home/ani
+   21  cd ..
+   22  ls
+   23  cd /ani/
+   24  cd /home/ani
+   25  sudo deluser ani
+   26  sudo -i
+   27  cd
+   28  id
+   29  man sudo
+   30  ls
+   31  cd
+   32  cd ../
+   33  ls
+   34  cd /ani/
+   35  su ani
+   36  sudo su ano
+   37  sudo su ani
+   38  deluser --home-ani
+   39  deluser ani --remove-home
+   40  sudo deluser ani --remove-home
+   41  sudo deluser ani --remove-all-files
+   42  clear
+   43  ls
+   44  rm ani
+   45  sudo rm -r ani
+   46  ls
+   47  info rm
+   48  clear
+   49  cd
+   50  clear
+   51  cd /etc/skel/
+   52  ls
+   53  ls -la
+   54  man ls
+   55  cat bashrc
+   56  nano bashrc
+   57  cd /home
+   58  ll
+   59  info useradd
+   60  /home 
+   61  cd /home
+   62  ls
+   63  touch /sergey/index.html
+   64  touch /home/sergey/index.html
+   65  ls la /sergey
+   66  ls -la /sergey
+   67  sudo ls -la /sergey
+   68  cd /home/sergey
+   69  ls -la
+   70  clear
+   71  sudo useradd -mk /home/sergey aram
+   72  ls
+   73  cd
+   74  ls
+   75  cd ..
+   76  ls
+   77  cd /aram
+   78  cd /home/aram
+   79  sudo cd /home/aram
+   80  sudo cd -s /home/aram
+   81  sudo su aram
+   82  clear
+   83  ls -l
+   84  cd /sergey/
+   85  cd /home/sergey/
+   86  ls
+   87  ;s
+   88  ls
+   89  cd ..
+   90  cd /home/aram
+   91  sudo cd /home/aram
+   92  sudo -s cd /home/aram
+   93  ls
+   94  sudo -s cd /home/aram
+   95  sudo ls /home/aram
+   96  sudo useradd -s /bin/bash aram
+   97  sudo cd /home/aram
+   98  cd /home/aram
+   99  sudo useradd -s /bin/bash aram
+  100  /etc/passwd | grep aram
+  101  sudo /etc/passwd | grep aram
+  102  sudo cat /etc/passwd | grep aram
+  103  sudo useradd -s /bin/bash aram
+  104  sudo cat /etc/passwd | grep aram
+  105  sudo cat /ls/nologin
+  106  sudo cat /sbin/nologin
+  107  clear
+  108  sudo cat /etc/passwd | grep aram
+  109  sudo nano /etc/passwd | grep aram
+  110  sudo groupadd -G 1500 researcher
+  111  sudo groupadd -g 1500 researcher
+  112  cat /etc/group
+  113  clear
+  114  cat /etc/shadow
+  115  sudo cat /etc/shadow
+  116  clear
+  117  cat /etc/passwd | grep aram
+  118  id aram
+  119  sudo usermod -g researcher aram
+  120  id aram
+  121  sudo usermod -G researcher,sudo aram
+  122  id aram
+  123  su aram
+  124  userdel aram
+  125  sudo userdel aram
+  126  pkill 2974
+  127  sudo userdel aram
+  128  kill 2974
+  129  sudo kill 2974
+  130  sudo userdel aram
+  131  userdel -f aram
+  132  sudo userdel -f aram
+  133  reboot
+  134  sudo cat /etc/passwd | grep aram
+  135  sudo usermod --shell /bin/bash aram
+  136  sudo cat /etc/passwd | grep aram
+  137  cd /home/aram
+  138  sudo cd /home/aram
+  139  sudo su aram
+  140  sudo passwd aram
+  141  su aram
+  142  sudo userdel aram
+  143  ls
+  144  cd /home
+  145  ls
+  146  sudo userdel aram
+  147  cat /etc/passwd | grep aram
+  148  cat /etc/passwd
+  149  clear
+  150  ls -la
+  151  ls -l
+  152  sudo rm -r aram
+  153  ls -l
+  154  cat /etc/group | grep researcher
+  155  groupdel researcher
+  156  sudo groupdel researcher
+  157  cat /etc/group | grep researcher
+  158  cat /etc/group
+  159  sudo groupdel aram
+  160  cat /etc/group
+  161  clear
+  162  ls
+  163  touch /sergey/test-file-assignment
+  164  touch /home/sergey/test-file-assignment
+  165  cd /home/sergey
+  166  ls
+  167  useradd test
+  168  sudo useradd test
+  169  id test
+  170  groupadd researcher
+  171  sudo groupadd researcher
+  172  clear
+  173  cat /etc/group | grep researcher
+  174  id test
+  175  cat /etc/group | grep test
+  176  cat /etc/passwd | grep test
+  177  cat /etc/group
+  178  id
+  179  clear
+  180  cat /etc/passwd
+  181  cat /etc/shadow
+  182  sudo cat /etc/shadow
+  183  sudo cat /etc/passwd
+  184  id test
+  185  groupadd -G test,researcher test
+  186  useradd -G test,researcher test
+  187  useradd -G researcher test
+  188  groupmod -G test,researcher test
+  189  groupmod -g test,researcher test
+  190  su test
+  191  info usermod
+  192  sudo usermod -a -G researcher test
+  193  id test
+  194  ls
+  195  sudo mkdir test-directory-assigment
+  196  ls -l
+  197  id test
+  198  nano index.html
+  199  cat index.html
+  200  cat /etc/passwd
+  201  id test
+  202  id test -l
+  203  id --help
+  204  id -a test
+  205  id -Z test
+  206  id -g test
+  207  id -G test
+  208  usermod info
+  209  usermod man
+  210  ls
+  211  II test-file-assignment > output-file
+  212  ll test-file-assignment > output-file
+  213  ls
+  214  man ll
+  215  ls -l
+  216  ll
+  217  clear
+  218  cd /home
+  219  ls
+  220  ll
+  221  ls -l
+  222  ls
+  223  cd /sergey/
+  224  cd /sergey
+  225  cd /home/sergey
+  226  ls
+  227  cat /output-file
+  228  sudo cat /output-file
+  229  ll test-directory-assigment > output-directory
+  230  ls -l
+  231  nano output-directory
+  232  cat test-file-assignment
+  233  clear
+  234  ls -l
+  235  cat output-file
+  236  cat output-directory
+  237  id test-file-assignment
+  238  chown man
+  239  chown --help
+  240  chown test /test-file-assignment
+  241  cd .hom
+  242  cd /home
+  243  cd /home/sergey
+  244  ls
+  245  chown test /test-file-assignment
+  246  chown test /home/sergey/test-file-assignment
+  247  sudo chown test /home/sergey/test-file-assignment
+  248  ls -l
+  249  sudo chown -g researcher test-directory-assigment
+  250  sudo chown .researcher test-directory-assigment
+  251  ls -l
+  252  sudo chmod 107 test-file-assignment
+  253  ls -l
+  254  sudo chmod 700 test-directory-assigment
+  255  ls -l
+  256  sudo ll test-file-assignment>>output-file > output-file
+  257  history
+  258  ll test-file-assignment>>output-file > output-file
+  259  ls -l
+  260  cat output-file
+  261  cat test-file-assignment 
+  262  sudo cat test-file-assignment 
+  263  cat output-file
+  264  ll test-directory-assigment>>output-directiry > output-directory 
+  265  sudo ll test-directory-assigment>>output-directiry > output-directory 
+  266  ll test-directory-assigment>>output-directiry > output-directory 
+  267  clear
+  268  ls -l
+  269  ll test-directory-assigment>>output-directory > output-directory 
+  270  clear
+  271  ls
+  272  clear
+  273  ls -l
+  274  ls -al
+  275  clear
+  276  ls -l
+  277  chown sergey test-directory-assigment
+  278  sudo chown sergey test-directory-assigment
+  279  ls -l
+  280  ll test-directory-assigment>>output-directory > output-directory 
+  281  ls -l
+  282  rm -r output-directiry 
+  283  ls -l
+  284  cat output-directory 
+  285  cd /test-directory-assigment
+  286  cd /home/sergey/test-directory-assigment
+  287  ls
+  288  ls -l
+  289  clear
+  290  ls -l
+  291  cd
+  292  ls
+  293  clear
+  294  ls -l
+  295  cat output-directory 
+  296  ll
+  297  ls -la
+  298  clear
+  299  cat output-directory 
+  300  cat output-file 
+  301  history
+  302  ps
+  303  pc
+  304  ps --forest
+  305  clear
+  306  sudo userdell test
+  307  sudo userdel test
+  308  id test
+  309  sudo groupdel researcher
+  310  cat /etc/passwd
+  311  clear
+  312  cat /etc/group
+  313  clear
+  314  ll test-file-assignment>>output-file > output-file
+  315  ls -l
+  316  cat output-file
+  317  ll test-directory-assigment>>output-directory > output-directory 
+  318  cat output-directory 
+  319  ls
+  320  cd ../../
+  321  ls
+  322  sudo cp /etc/shadow /tmp
+  323  cd tmp
+  324  ls -l
+  325  cd /shadow
+  326  cat shadow
+  327  sudo cat shadow
+  328  clear
+  329  sudo passwd sergey
+  330  sudo passwd root
+  331  cat shadow | grep sergey,root
+  332  sudo cat shadow | grep sergey,root
+  333  sudo cat shadow | grep sergey
+  334  sudo cat ../etc/shadow | grep sergey
+  335  grep man
+  336  sudo cat ../etc/shadow | grep sergey root
+  337  sudo cat ../etc/shadow | grep sergey,root
+  338  sudo cat ../etc/shadow | grep root
+  339  sudo cat shadow | grep root
+  340  sudo diff ../etc/shadow shadow
+  341  history
+  342  sudo cp /etc/passwd,group /tmp
+  343  sudo cp /etc/passwd /tmp
+  344  sudo cp /etc/group /tmp
+  345  ls -l
+  346  sudo useradd jane
+  347  id jane
+  348  sudo useradd -c 'Jane Tarzan' jane
+  349  sudo userdel jane
+  350  id jane
+  351  sudo useradd -c 'Jane Tarzan' /bin/bash jane
+  352  sudo useradd -c 'Jane Tarzan' jane
+  353  cat /etc/passwd
+  354  id jane
+  355  clear
+  356  usermod -ag sudo jane
+  357  usermod -G sudo jane
+  358  sudo usermod -G sudo jane
+  359  id jane
+  360  sudo diff /tmp/group /etc/group
+  361  sudo diff etc/group /tmp/group
+  362  sudo diff /etc/group /tmp/group
+  363  sudo cat /tmp/group
+  364  sudo cat /etc/group
+  365  clear
+  366  sudo ungroup sudo jane
+  367  sudo deluser jane sudo
+  368  sudo cat /etc/group | grep jane
+  369  sudo diff /tmp/group /tmp/passwd 
+  370  history
+  371  sudo usermod -G sudo jane
+  372  cat /etc/passwd
+  373  clear
+  374  cat /etc/passwd | grep jane
+  375  sudo usermod -G sudo jane
+  376  cat /etc/passwd | grep jane
+  377  id jane
+  378  cat /tmp/passwd | jane
+  379  cat /tmp/passwd | grep jane
+  380  cat /etc/passwd | grep jane
+  381  diff /etc/passwd | grep jane
+  382  diff /etc/passwd /tmp/passwd | grep jane
+  383  diff /etc/passwd /tmp/passwd
+  384  history
+sergey@sergey-VirtualBox:~$

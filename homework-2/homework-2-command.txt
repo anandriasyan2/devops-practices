@@ -1,0 +1,128 @@
+  387  man print
+  388  alias tmp=ls /tmp/
+  389  alias tmp="ls /tmp"
+  390  tmp
+  391  unalias tmp="ls /tmp"
+  392  unalias tmp
+  393  tmp
+  394  echo $The apartment costs $100000
+  395  echo $"The apartment costs $100000"
+  396  echo $"The apartment costs "$100000""
+  397  print "The apartment costs "$100000"
+  398  echo $"The apartment costs '$100000'"
+  399  echo $"The apartment costs "$100000""
+  400  man echo
+  401  apartment=The apartment costs $100000
+  402  variable apartment=The apartment costs $100000
+  403  apartment = The apartment costs $100000
+  404  apartment=The apartment costs $100000
+  405  apartment=The
+  406  echo apartment
+  407  echo $apartment
+  408  clear
+  409  echo $'The apartment costs "$100000"'
+  410  echo $'The apartment costs $100000'
+  411  echo $'Hello; World'
+  412  cost=5000
+  413  echo $cost
+  414  man diff
+  415  man call
+  416  man cal
+  417  cal -3
+  418  sudo apr install cal
+  419  sudo apt install cal
+  420  cal
+  421  sudo apt install ncal
+  422  cal
+  423  cal 21 1997
+  424  cal 10 1997
+  425  man cal
+  426  cal 2028
+  427  cal 2028 > calendar-2028.txt
+  428  ls
+  429  cat calendar-2028.txt 
+  430  clear
+  431  date
+  432  man date
+  433  date -d 2022
+  434  man date
+  435  date --date 2022
+  436  date --date=2022
+  437  man date
+  438  date --date=2022 +%2022
+  439  date --date='2022' +%2022
+  440  clear
+  441  date --date='2022'
+  442  date --date='2022' +%Y
+  443  date --date='2 years ago'
+  444  date --date='26 years ago'
+  445  man last
+  446  last -F
+  447  man cat
+  448  cat calendar-2028.txt 
+  449  clear
+  450  man chmod
+  451  touch test.sh
+  452  ls -l
+  453  ll
+  454  clear
+  455  ls -l
+  456  chmod 700 test.sh
+  457  ls -l
+  458  ls -l | grep test.sh
+  459  clear
+  460  ls -l | grep test.sh
+  461  chmod 707 test.sh
+  462  ls -l | grep test.sh
+  463  chmod 607 test.sh
+  464  ls -l | grep test.sh
+  465  chmod 507 test.sh
+  466  ls -l | grep test.sh
+  467  chmod 407 test.sh
+  468  ls -l | grep test.sh
+  469  chmod 660 test.sh
+  470  ls -l | grep test.sh
+  471  chmod 703 test.sh
+  472  ls -l | grep test.sh
+  473  chmod 447 test.sh
+  474  ls -l | grep test.sh
+  475  chmod 744 test.sh
+  476  ls -l | grep test.sh
+  477  clear
+  478  colour=red
+  479  echo $colour
+  480  colour=blue
+  481  echo $colour
+  482  env > env.txt
+  483  cat env.txt 
+  484  clear
+  485  env
+  486  man env
+  487  export colour
+  488  env > env-new.txt
+  489  diff env.txt env-new.txt 
+  490  env
+  491  clear
+  492  touch first-file
+  493  ls -l
+  494  alias lsl=ls -l
+  495  alias lsl='ls -l'
+  496  lsl
+  497  clear
+  498  cp first-file /tmp
+  499  cd /tmp
+  500  lsl
+  501  clear
+  502  mkdir first-directory
+  503  move first-file first-directory
+  504  mv first-file first-directory
+  505  lsl
+  506  cd first-directory/
+  507  lsl
+  508  cd..
+  509  cd ..
+  510  sudo rm first-directory/
+  511  sudo rm -r first-directory/
+  512  lsl
+  513  history
+  514  history > homework-2-command.txt
