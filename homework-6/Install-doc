@@ -1,4 +1,4 @@
-#How to Install and Configure Prometheus, Grafana, and Node Exporter
+#--------------------------------------How to Install and Configure Prometheus, Grafana, and Node Exporter--------------------------------------
 #In these instructions, the system hosting the Prometheus server is referred to as the “monitoring server”. The system being monitored is a “client”. It is possible to develop very complicated custom exporters and dashboards using Prometheus and Grafana. However, this guide describes a more straightforward solution for monitoring the most critical client details, including CPU, memory, and I/O usage. It does not require any knowledge of PromQL or any low-level details for either Prometheus or Grafana.
 
 #To configure the end-to-end solution, the following steps are required.
