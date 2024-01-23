@@ -16,7 +16,7 @@ sudo mv node_exporter-1.5.0.linux-amd64/node_exporter /usr/local/bin
 rm -r node_exporter-1.5.0.linux-amd64*
 #6. There are two ways of running Node Exporter. It can be launched from the terminal using the command node_exporter. Or, it can be activated as a system service. Running it from the terminal is less convenient. But this might not be a problem if the tool is only intended for occasional use. To run Node Exporter manually, use the following command. The terminal outputs details regarding the statistics collection process.
 
-node_exporter
+#node_exporter
 #7. It is more convenient to run Node Exporter as a service. To run Node Exporter this way, first, create a node_exporter user.
 
 sudo useradd -rs /bin/false node_exporter
