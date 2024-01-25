@@ -9,31 +9,31 @@
 #--------------------------------------How to Install and Configure Node Exporter on the Client--------------------------------------
 #1. Use wget to download Prometheus to the monitoring server. The target link has the format https://github.com/prometheus/prometheus/releases/download/v[release]/prometheus-[release].linux-amd64.tar.gz. Replace the string [release] with the actual release to download. For example, the following command downloads release 2.37.6.
 
-#wget https://github.com/prometheus/prometheus/releases/download/v2.37.6/prometheus-2.37.6.linux-amd64.tar.gz
+wget https://github.com/prometheus/prometheus/releases/download/v2.37.6/prometheus-2.37.6.linux-amd64.tar.gz
 #2. Extract the archived Prometheus files.
 
-#tar xvfz prometheus-*.tar.gz
+tar xvfz prometheus-*.tar.gz
 #3. (Optional) After the files have been extracted, delete the archive or move it to a different location for storage.
 
-#rm prometheus-*.tar.gz
+rm prometheus-*.tar.gz
 #4. Create two new directories for Prometheus to use. The /etc/prometheus directory stores the Prometheus configuration files. The /var/lib/prometheus directory holds application data.
 
-#mkdir /etc/prometheus /var/lib/prometheus
+mkdir /etc/prometheus /var/lib/prometheus
 #5. Move into the main directory of the extracted prometheus folder. Substitute the name of the actual directory in place of prometheus-2.37.6.linux-amd64.
 
-#cd prometheus-2.37.6.linux-amd64
+cd prometheus-2.37.6.linux-amd64
 #6. Move the prometheus and promtool directories to the /usr/local/bin/ directory. This makes Prometheus accessible to all users.
 
-#cp prometheus promtool /usr/local/bin/
+cp prometheus promtool /usr/local/bin/
 #7. Move the prometheus.yml YAML configuration file to the /etc/prometheus directory.
 
-#cp prometheus.yml /etc/prometheus/prometheus.yml
+cp prometheus.yml /etc/prometheus/prometheus.yml
 #8. The consoles and console_libraries directories contain the resources necessary to create customized consoles. This feature is more advanced and is not covered in this guide. However, these files should also be moved to the etc/prometheus directory in case they are ever required.
 
-#mv consoles/ console_libraries/ /etc/prometheus/
+mv consoles/ console_libraries/ /etc/prometheus/
 #9. Verify that Prometheus is successfully installed using the below command:
 
-#prometheus --version
+prometheus --version
 
 #--------------------------------------How to Configure Prometheus as a Service--------------------------------------
 #1. Create a prometheus user. The following command creates a system user.
@@ -44,7 +44,7 @@ useradd -rs /bin/false prometheus
 chown -R prometheus: /etc/prometheus /var/lib/prometheus
 #3. To allow Prometheus to run as a service, create a prometheus.service file using the following command:
 
-cp prometheus.service /etc/systemd/system/
+cp ../prometheus.service /etc/systemd/system/
 #Enter the following content into the file:
 
 systemctl daemon-reload
